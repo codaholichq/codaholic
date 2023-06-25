@@ -1,0 +1,60 @@
+baseURL: "https://codaholic.com"
+languageCode: en-us
+title: Codaholic
+theme: PaperMod
+
+params:
+  homeInfoParams:
+    Title: "Hello World"
+    Content: "Welcome to Markup Stack. Here you'll find a lot of information that will make you a 10x Software Engineer"
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/company/codaholics"
+    - name: medium
+      url: "https://medium.com/@codaholic"
+    - name: dev
+      url: "https://dev.to/codaholic"
+    - name: github
+      url: "https://github.com/codaholicc"
+
+  cover:
+    linkFullImages: true
+  showBreadCrumbs: true
+  showReadingTime: true
+  showShareButtons: true
+  showPostNavLinks: true
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+
+markup:
+  highlight:
+      anchorLineNos: false
+      codeFences: true
+      guessSyntax: false
+      hl_Lines: ""
+      hl_inline: false
+      lineAnchors: ""
+      lineNoStart: 1
+      lineNos: false
+      lineNumbersInTable: true
+      noClasses: true
+      noHl: false
+      style: monokai
+      tabWidth: 4
+  goldmark:
+    renderer:
+      hardWraps: true
+      unsafe: true
