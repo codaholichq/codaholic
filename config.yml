@@ -6,7 +6,7 @@ theme: PaperMod
 params:
   homeInfoParams:
     Title: "Hello World"
-    Content: "Welcome to Markup Stack. Here you'll find a lot of information that will make you a 10x Software Engineer"
+    Content: "Welcome to Codaholic. Here you'll find a lot of information that will make you a 10x Software Engineer"
   socialIcons:
     - name: linkedin
       url: "https://linkedin.com/company/codaholics"
