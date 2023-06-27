@@ -1,43 +1,115 @@
 baseURL: "https://codaholic.com"
 languageCode: en-us
 title: Codaholic
+paginate: 10
 theme: PaperMod
 
-params:
-  homeInfoParams:
-    Title: "Hello World"
-    Content: "Welcome to Codaholic. Here you'll find a lot of information that will make you a 10x Software Engineer"
-  socialIcons:
-    - name: linkedin
-      url: "https://linkedin.com/company/codaholics"
-    - name: medium
-      url: "https://medium.com/@codaholic"
-    - name: dev
-      url: "https://dev.to/codaholic"
-    - name: github
-      url: "https://github.com/codaholicc"
+enableRobotsTXT: true
 
-  cover:
-    linkFullImages: true
+params:
+  env: production
+  title: Codaholic
+  description: "Codaholic is a community created for those who want to 10x software engineers"
+  keywords: [Community, Software Engineer, Developer, Coding, Programming]
+
   showBreadCrumbs: true
   showReadingTime: true
   showShareButtons: true
   showPostNavLinks: true
+  showCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Codaholic"
+    icon: "img/logo.png"
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: "Welcome! \U0001F44B"
+    subtitle: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
+    You get to connect with like-minded professionals, exchange knowledge, and stay up-to-date with the latest trends and innovations.
+    Join us on this exciting journey of continuous learning and collaboration."
+    imageUrl: "img/logo.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: "Codaholic"
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Projects
+        url: projects
+
+  googleAnalyticsID: G-XSFDQYYB72
+
+  homeInfoParams:
+    Title: "Welcome! \U0001F44B"
+    Content: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
+    You get to connect with like-minded professionals, exchange knowledge, and stay up-to-date with the latest trends and innovations.
+    Join us on this exciting journey of continuous learning and collaboration."
+  
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/codaholic"
+    - name: youtube
+      url: "http://youtube.com/@codaholic"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/codaholics"
+    - name: github
+      url: "https://github.com/codaholicc"
+    - name: dev
+      url: "https://dev.to/codaholic"
+    - name: instagram
+      url: "https://instagram.com/codaholic"
+    - name: medium
+      url: "https://medium.com/codaholic"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+    linkFullImages: true
+
+  
+  editPost:
+    URL: ""
+    Text: "" # edit text
+    appendFilePath: true # to append file path to Edit link
+
 
 menu:
   main:
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 10
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 20
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 30
+      weight: 3
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 4
+
 
 markup:
   highlight:
