@@ -1,4 +1,4 @@
-baseURL: "https://codaholic.com"
+baseURL: https://codaholic.com/
 languageCode: en-us
 title: Codaholic
 paginate: 10
@@ -6,10 +6,15 @@ theme: PaperMod
 
 enableRobotsTXT: true
 
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+
+
 params:
   env: production
   title: Codaholic
-  description: "Codaholic is a community created for those who want to 10x software engineers"
+  description: Codaholic is a community created for those who want to 10x software engineers
   keywords: [Community, Software Engineer, Developer, Coding, Programming]
 
   showBreadCrumbs: true
@@ -33,10 +38,10 @@ params:
   profileMode:
     enabled: true
     title: "Welcome! \U0001F44B"
-    subtitle: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
+    subtitle: Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
     You get to connect with like-minded professionals, exchange knowledge, and stay up-to-date with the latest trends and innovations.
-    Join us on this exciting journey of continuous learning and collaboration."
-    imageUrl: "img/logo.png"
+    Join us on this exciting journey of continuous learning and collaboration.
+    imageUrl: img/logo.png
     imageWidth: 120
     imageHeight: 120
     imageTitle: "Codaholic"
@@ -50,49 +55,39 @@ params:
 
   homeInfoParams:
     Title: "Welcome! \U0001F44B"
-    Content: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
+    Content: Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
     You get to connect with like-minded professionals, exchange knowledge, and stay up-to-date with the latest trends and innovations.
-    Join us on this exciting journey of continuous learning and collaboration."
+    Join us on this exciting journey of continuous learning and collaboration.
   
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/codaholic"
+      url: https://twitter.com/codaholic
     - name: youtube
-      url: "http://youtube.com/@codaholic"
+      url: http://youtube.com/@codaholic
     - name: linkedin
-      url: "https://www.linkedin.com/in/codaholics"
+      url: https://www.linkedin.com/in/codaholics
     - name: github
-      url: "https://github.com/codaholicc"
+      url: https://github.com/codaholicc
     - name: dev
-      url: "https://dev.to/codaholic"
+      url: https://dev.to/codaholic
     - name: instagram
-      url: "https://instagram.com/codaholic"
+      url: https://instagram.com/codaholic
     - name: medium
-      url: "https://medium.com/codaholic"
+      url: https://medium.com/codaholic
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: false # hide on single page
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: false
     linkFullImages: true
 
-  
-  editPost:
-    URL: ""
-    Text: "" # edit text
-    appendFilePath: true # to append file path to Edit link
+  analytics:
+    google:
+      SiteVerificationTag: G-XSFDQYYB72
 
 
 menu:
   main:
-    # - identifier: categories
-    #   name: Categories
-    #   url: /categories/
-    #   weight: 10
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags/
-    #   weight: 20
     - identifier: posts
       name: Posts
       url: /posts/
