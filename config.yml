@@ -38,9 +38,9 @@ params:
   profileMode:
     enabled: true
     title: "Welcome! \U0001F44B"
-    subtitle: Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
+    subtitle: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
     You get to connect with like-minded professionals, exchange knowledge, and stay up-to-date with the latest trends and innovations.
-    Join us on this exciting journey of continuous learning and collaboration
+    Join us on this exciting journey of continuous learning and collaboration."
     imageUrl: img/logo.png
     imageWidth: 120
     imageHeight: 120
@@ -55,9 +55,9 @@ params:
 
   homeInfoParams:
     Title: "Welcome! \U0001F44B"
-    Content: Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
+    Content: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
     You get to connect with like-minded professionals, exchange knowledge, and stay up-to-date with the latest trends and innovations.
-    Join us on this exciting journey of continuous learning and collaboration
+    Join us on this exciting journey of continuous learning and collaboration."
   
   socialIcons:
     - name: twitter
