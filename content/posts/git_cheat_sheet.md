@@ -1,7 +1,6 @@
 ---
 title: "Git Cheat Sheet"
 date: 2023-06-25T09:23:09+0100
-draft: false
 cover:
     image: img/git_cheat.webp
     alt: 'Git Cheat Sheet'

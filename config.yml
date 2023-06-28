@@ -14,10 +14,11 @@ sitemap:
 params:
   env: production
   title: Codaholic
+  author: Emmy Steven
   description: Codaholic is a community created for those who want to 10x software engineers
   keywords: [Community, Software Engineer, Developer, Coding, Programming]
 
-  showBreadCrumbs: true
+  showBreadCrumbs: false
   showReadingTime: true
   showShareButtons: true
   showPostNavLinks: true
