@@ -61,14 +61,20 @@ params:
     Join us on this exciting journey of continuous learning and collaboration."
   
   socialIcons:
+    - name: twitter
+      url: https://twitter.com/CodaholicHQ
     - name: youtube
-      url: http://youtube.com/@codaholicc
+      url: http://youtube.com/@CodaholicHQ
     - name: linkedin
-      url: https://www.linkedin.com/in/codaholics
+      url: https://www.linkedin.com/company/codaholichq
     - name: github
-      url: https://github.com/codaholicc
+      url: https://github.com/codaholichq
+    - name: twitch
+      url: https://www.twitch.tv/codaholichq
     - name: dev
       url: https://dev.to/codaholic
+    - name: instagram
+      url: https://instagram.com/codaholichq
     - name: medium
       url: https://medium.com/codaholic
 
