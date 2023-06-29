@@ -33,7 +33,7 @@ params:
 
   label:
     text: "Codaholic"
-    icon: "img/logo.png"
+    icon: "img/logo.webp"
     iconHeight: 35
 
   profileMode:
@@ -42,7 +42,7 @@ params:
     subtitle: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
     You get to connect with like-minded professionals, exchange knowledge, and stay up-to-date with the latest trends and innovations.
     Join us on this exciting journey of continuous learning and collaboration."
-    imageUrl: img/logo.png
+    imageUrl: img/logo.webp
     imageWidth: 120
     imageHeight: 120
     imageTitle: Codaholic
