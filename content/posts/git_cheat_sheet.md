@@ -1,5 +1,6 @@
 ---
 title: "Git Cheat Sheet"
+description: "Unlock the power of Git with our comprehensive Cheat Sheet. Streamline your version control workflow and collaborate effectively using Git in no time!"
 date: 2023-06-25T09:23:09+0100
 cover:
     image: img/git_cheat.webp
@@ -7,7 +8,7 @@ cover:
     caption: 'Git Cheat Sheet'
     
 tags: ["git", "version control", "collaboration", "programming", "developer"]
-categories: ["tech", "software development"]
+categories: ["VCS"]
 ---
 
 ### What is Git?
