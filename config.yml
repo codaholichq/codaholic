@@ -4,8 +4,8 @@ title: Codaholic
 paginate: 10
 theme: PaperMod
 
+googleAnalytics: G-CJ1XGSZQKH
 enableRobotsTXT: true
-
 sitemap:
   changefreq: weekly
   priority: 0.8
@@ -52,8 +52,6 @@ params:
       - name: Projects
         url: projects
 
-  googleAnalyticsID: G-XSFDQYYB72
-
   homeInfoParams:
     Title: "Welcome! \U0001F44B"
     Content: "Welcome to Codaholic, a thriving tech community dedicated to fueling your passion for technology.
@@ -83,11 +81,6 @@ params:
     hiddenInList: true
     hiddenInSingle: false
     linkFullImages: true
-
-  analytics:
-    google:
-      SiteVerificationTag: G-XSFDQYYB72
-
 
 menu:
   main:
