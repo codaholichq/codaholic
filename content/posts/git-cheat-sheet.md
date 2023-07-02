@@ -7,7 +7,7 @@ cover:
     alt: 'Git Cheat Sheet'
     caption: 'Git Cheat Sheet'
     
-tags: ["git", "version control", "collaboration", "programming", "developer"]
+tags: ["Git", "Version Control", "Collaboration", "Programming", "Developer"]
 categories: ["VCS"]
 ---
 
