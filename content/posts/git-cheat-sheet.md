@@ -17,7 +17,7 @@ Git is a distributed version control system (VCS) used in software development t
 
 At its core, Git helps developers track modifications made to files in a project. Instead of saving complete copies of each file for every change, Git focuses on capturing and storing the differences or "delta" between versions. This approach makes Git efficient in terms of storage and allows for faster operations.
 
-Git operates on the concept of a repository, which is a collection of files and their complete history. Each developer has their own local copy of the repository, enabling them to work independently and commit changes to their local version. These commits create a timeline of the project's development, forming a complete history.
+Git operates on the concept of a repository, which is a collection of files and their complete history. Each developer has their local copy of the repository, enabling them to work independently and commit changes to their local version. These commits create a timeline of the project's development, forming a complete history.
 
 Git supports branching, allowing developers to create separate lines of development. Branches can be used to work on new features, bug fixes, or experiments without affecting the main codebase. Branches can be merged back into the main branch when the changes are complete.
 
@@ -33,9 +33,9 @@ Collaboration is a key aspect of Git. It enables developers to share their chang
 
 4. Speed and efficiency: Git's design enables fast and efficient operations, making it suitable for projects of any size.
 
-Git is not the only version control system or tool out there, however, it is widely adopted in the software development due to its reliability, flexibility, and ability to handle both small and large-scale projects effectively.
+Git is not the only version control system or tool out there, however, it is widely adopted in software development due to its reliability, flexibility, and ability to handle both small and large-scale projects effectively.
 
-Git comes with different commands, which can be overwhelming. Below are the list of commands that you will get to use more often.
+Git comes with different commands, which can be overwhelming. Below is the list of commands that you will get to use more often.
 
 **Set your Git username**
 `git config --global user.name "Your Name"`
@@ -62,7 +62,7 @@ Clone an existing repository from a remote source
 Add changes to the staging area
 `git add filename_here`
 
-Add all changes to the staging area 
+Add all changes to the staging area
 `git add .` 
 
 Commit changes to the local repository with a message
@@ -139,7 +139,7 @@ Remove a remote branch
 
 `git diff [file]`: Show the changes made to a specific file.
 
-`git push -f` This will forcefully push a git commit to remote repository
+`git push -f` This will forcefully push a git commit to the remote repository
 
 ### Conclusion:
 
