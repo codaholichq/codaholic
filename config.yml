@@ -60,9 +60,9 @@ params:
   
   socialIcons:
     - name: twitter
-      url: https://twitter.com/CodaholicHQ
+      url: https://twitter.com/codaholichq
     - name: youtube
-      url: http://youtube.com/@CodaholicHQ
+      url: http://youtube.com/@codaholichq
     - name: linkedin
       url: https://www.linkedin.com/company/codaholichq
     - name: github
