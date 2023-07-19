@@ -2,7 +2,7 @@ baseURL: https://codaholic.com/
 languageCode: en-us
 title: Codaholic
 paginate: 10
-theme: PaperMod
+theme: ["PaperMod"]
 
 permalinks:
   posts: /:slug/
@@ -34,6 +34,8 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+
+  privacypolicy: /pages/privacy
 
   label:
     text: "Codaholic"
@@ -76,18 +78,14 @@ menu:
       name: Posts
       url: posts
       weight: 1
-    - identifier: projects
-      name: Projects
-      url: projects
+    - identifier: podcasts
+      name: Podcasts
+      url: podcasts
       weight: 2
     - identifier: archives
       name: Archives
       url: archives
       weight: 3
-    - identifier: about
-      name: About
-      url: about
-      weight: 4
 
 
 markup:
