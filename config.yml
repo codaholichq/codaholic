@@ -4,6 +4,9 @@ title: Codaholic
 paginate: 10
 theme: PaperMod
 
+permalinks:
+  posts: /:slug/
+
 googleAnalytics: G-CJ1XGSZQKH
 enableRobotsTXT: true
 sitemap:
@@ -88,19 +91,19 @@ menu:
 
 markup:
   highlight:
-      anchorLineNos: false
-      codeFences: true
-      guessSyntax: false
-      hl_Lines: ""
-      hl_inline: false
-      lineAnchors: ""
-      lineNoStart: 1
-      lineNos: false
-      lineNumbersInTable: true
-      noClasses: true
-      noHl: false
-      style: monokai
-      tabWidth: 4
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: monokai
+    tabWidth: 4
   goldmark:
     renderer:
       hardWraps: true

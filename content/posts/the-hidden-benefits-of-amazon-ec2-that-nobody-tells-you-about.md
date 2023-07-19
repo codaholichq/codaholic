@@ -1,4 +1,5 @@
 ---
+slug: ec2-hidden-benefits
 title: "The Hidden Benefits of Amazon EC2 That Nobody Tells You About"
 description: "Learn about the hidden benefits of Amazon EC2. Discover how to use EC2 to scale your applications, improve your security, and reduce your IT costs"
 date: 2023-07-03T11:30:41+0100

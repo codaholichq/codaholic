@@ -1,4 +1,5 @@
 ---
+slug: nuget-package-risk
 title: "How This NuGet Package Almost Cost Me My Job"
 description: "Discover the shocking truth about how a seemingly innocent NuGet package nearly derailed my career. Learn from my experience and avoid the pitfalls. Read now!"
 date: 2023-07-15T20:24:57+01:00
