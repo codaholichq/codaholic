@@ -3,7 +3,6 @@ title: "About"
 date: 2022-04-09T23:15:00+07:00
 slug: about
 url: about
-category:
 summary:
 description:
 cover:
@@ -11,8 +10,6 @@ cover:
   alt:
   caption:
   relative: true
-showtoc: false
-draft: false
 ---
 
 Welcome to Codaholic, a vibrant and thriving tech community where passionate individuals come together to explore, learn, and share their love for all things tech!
