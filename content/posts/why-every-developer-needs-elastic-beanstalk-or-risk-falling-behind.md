@@ -3,14 +3,12 @@ slug: elastic-beanstalk-advantage
 title: "Why Every Developer Needs Elastic Beanstalk or Risk Falling Behind"
 description: "Stay ahead in the developer game with Elastic Beanstalk! Discover the power of this essential tool for seamless deployment and scaling. Don't miss out!"
 date: 2023-07-01T23:40:16+0100
+draft: false
 cover:
     image: img/elastic_beanstalk.webp
     alt: 'Why Every Developer Needs Elastic Beanstalk or Risk Falling Behind'
     caption: 'Elastic Beanstalk'
-    
-tags: ["Elastic Beanstalk", "AWS Services", "Cloud Services", "Cloud Computing", "Programming"]
-categories: ["DevOps", "Cloud Computing"]
-draft: false
+categories: ["Cloud Computing"]
 ---
 
 **What is Elastic Beanstalk**

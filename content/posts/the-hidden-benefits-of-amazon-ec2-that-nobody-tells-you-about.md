@@ -8,8 +8,7 @@ cover:
     image: img/amazon-ec2.webp
     alt: 'The Hidden Benefits of Amazon EC2 That Nobody Tells You About'
     caption: 'Amazon EC2'
-tags: ["Amazon EC2", "AWS Services", "Cloud Services", "Cloud Computing", "Programming"]
-categories: ["DevOps", "Cloud Computing"]
+categories: ["Cloud Computing"]
 ---
 
 **What is EC2?**

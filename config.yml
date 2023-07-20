@@ -87,6 +87,9 @@ menu:
       url: archives
       weight: 3
 
+taxonomies:
+  category: "" #disables the taxonomy
+  tag: ""
 
 markup:
   highlight:

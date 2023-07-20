@@ -8,8 +8,7 @@ cover:
     image: img/almost-got-sacked.webp
     alt: 'How This Nuget Package Almost Cost Me My Job'
     caption: 'Almost Got Sacked | Photo by Andrea Piacquadio'
-tags: ["Dotnet Core", "NuGet", "Extension", "Coding", "Programming"]
-categories: ["Programming", "Backend"]
+categories: [".NET Core"]
 ---
 
 In the world of .NET development, NuGet packages have become an essential part of building applications. These are pre-built libraries that offer convenience and efficiency, enabling .NET developers to save time and effort by leveraging existing code. However, my personal experience with a particular NuGet package taught me a valuable lesson about the importance of thorough evaluation and careful implementation. In this blog post, I will share the story of how a seemingly harmless NuGet package nearly jeopardized my job and discuss the key takeaways and best practices to prevent similar pitfalls.
