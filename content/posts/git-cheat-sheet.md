@@ -93,6 +93,12 @@ Rollback to an old commit
 List all branches
 `git branch`
 
+List all remote branches
+`git branch -r`
+
+List all local and remote branches
+`git branch -a`
+
 Create a new branch
 `git branch [branch-name]`
 
@@ -102,11 +108,17 @@ Create a new branch
 Create a new branch and switch to it instantly
 `git checkout -b [branch_name]`
 
+Push to a branch
+`git push -u origin [branch_name]`
+
 Merge changes from a specific branch into the current branch
 `git merge [branch-name]` 
 
-Delete a branch
+Delete a local branch
 `git branch -d [branch_name]`
+
+Delete a remote branch
+`git push origin --delete [branch_name]`
 
 Push changes to a remote repository
 `git push origin [branch-name]` 
