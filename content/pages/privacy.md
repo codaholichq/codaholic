@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-date: 2022-04-09T23:15:00+07:00
+date: 2023-07-10T03:03:49+0100
 slug: privacy
 url: privacy
 summary:
