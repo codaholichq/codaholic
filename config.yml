@@ -3,6 +3,7 @@ languageCode: en-us
 title: Codaholic
 paginate: 10
 theme: ["PaperMod"]
+rssLimit: 25
 
 permalinks:
   posts: /:slug/
@@ -21,11 +22,13 @@ params:
   images: ["img/feature-image.webp"]
   description: Codaholic is a community created for those who want to 10x software engineers
   keywords: [Community, Software Engineer, Developer, Coding, Programming]
+  SidebarRecentLimit: 5
 
   showBreadCrumbs: false
   showReadingTime: true
   showShareButtons: true
   showPostNavLinks: true
+  ShowFullTextinRSS: true
   showCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -49,6 +52,8 @@ params:
     Join us on this exciting journey of continuous learning and collaboration."
   
   socialIcons:
+    - name: "rss"
+      url: "https://codaholic.com/index.xml"
     - name: twitter
       url: https://twitter.com/codaholichq
     - name: youtube
