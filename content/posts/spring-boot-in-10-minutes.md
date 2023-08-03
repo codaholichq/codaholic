@@ -2,7 +2,7 @@
 slug: spring-boot-guide
 title: "Spring Boot in 10 Minutes"
 date: 2023-07-30T02:47:11+0100
-description: "Learn about the hidden benefits of Amazon EC2. Discover how to use EC2 to scale your applications, improve your security, and reduce your IT costs"
+description: "Master the art of web development with our comprehensive guide on Spring Boot. Unlock the potential of this powerful framework today! 🌱 #SpringBootGuide"
 draft: false
 cover:
     image: img/00-spring-boot-guide.webp
