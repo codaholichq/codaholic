@@ -6,7 +6,7 @@ description: "Master the art of web development with our comprehensive guide on 
 draft: false
 cover:
     image: img/00-spring-boot-guide.webp
-    alt: 'Spring Boot in 10 Minutes'
+    alt: 'Spring Boot in 20 Minutes'
     caption: 'Spring Boot'
 categories: ["Spring Boot"]
 ---
