@@ -11,7 +11,7 @@ cover:
 categories: ["Spring Boot"]
 ---
 
-## **Spring Boot Overview - Chapter 1**
+## Chapter 1: Spring Boot Overview
 
 This guide will teach you how to use the most popular Java framework, Spring Boot.
 
@@ -22,7 +22,7 @@ Also, we'll show you how to connect a MariaDB database with Spring Boot and depl
 Let’s get our hands dirty:
 <br/>
 
-### **Prerequisites**
+### Prerequisites
 Before you continue with this guide, you need to have a working knowledge of: 
 
 - Java,
