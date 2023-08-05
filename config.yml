@@ -11,8 +11,8 @@ permalinks:
 googleAnalytics: G-CJ1XGSZQKH
 enableRobotsTXT: true
 sitemap:
-  changefreq: weekly
-  priority: 0.8
+  changefreq: daily
+  priority: 0.5
 
 
 params:
