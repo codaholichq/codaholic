@@ -1,6 +1,6 @@
 ---
 slug: spring-boot-guide
-title: "Spring Boot in 10 Minutes"
+title: "Spring Boot in 20 Minutes"
 date: 2023-07-30T02:47:11+0100
 description: "Master the art of web development with our comprehensive guide on Spring Boot. Unlock the potential of this powerful framework today! 🌱 #SpringBootGuide"
 draft: false
