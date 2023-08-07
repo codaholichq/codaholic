@@ -623,6 +623,20 @@ logging:
     name: logs/todo.log
 ```
 
+### Setup Environmental Variables
+
+In the root directory of your project, create a file and save it as `.env.dev`, and add the following environmental variables as shown below
+```env
+export APP_PORT=3000
+export APP_ADDRESS=127.0.0.1
+```
+
+The commands above set two environment variables: `APP_PORT` and `APP_ADDRESS`. Let's break down each line:
+
+- `export APP_PORT=3000`: This command sets the environment variable `APP_PORT` to the value `3000`. `APP_PORT` is the port number on which our Spring Boot application will listen for incoming requests.
+
+- `export APP_ADDRESS=127.0.0.1`: This command sets the environment variable `APP_ADDRESS` to the value `127.0.0.1`. The IP address `127.0.0.1` is a special loopback address that points to the current machine. In other words, it represents the local host or the "localhost."
+
 ### Build and Run the Application
 
 1. Open a terminal or command prompt.
@@ -630,7 +644,7 @@ logging:
 3. Run the following command to build the project:
 
 ```
-./gradlew bootRun
+source .env.dev && ./gradlew bootRun
 ```
 The Spring Boot application will start, and you will see log messages showing the server is up and running.
 
