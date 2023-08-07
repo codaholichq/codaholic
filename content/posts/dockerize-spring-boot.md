@@ -90,7 +90,26 @@ The right approach, which you will see shortly, is a more comprehensive approach
 
 <br/>
 
-2. Create a Docker file and save it as `Dockerfile` in the root directory of your project
+
+2. Create a file and save it as `.env.prod` in the root directory of your project, and add the environmental variables as shown below
+```env
+export APP_PORT=80
+export APP_ADDRESS=0.0.0.0
+```
+
+In the context of Dockerizing a Spring Boot application, the provided commands set environment variables inside the container. Let's break down each line:
+
+- `export APP_PORT=80`: This command sets the environment variable `APP_PORT` to the value `80`. `APP_PORT` represents the port number on which the Spring Boot application will listen for incoming network requests.
+
+  Port 80 is commonly used for HTTP traffic, so setting `APP_PORT` to 80 means the application will listen for incoming HTTP requests inside the container.
+
+- `export APP_ADDRESS=0.0.0.0`: This command sets the environment variable `APP_ADDRESS` to the value `0.0.0.0`. `0.0.0.0` is a special IP address that represents "any available network interface" in networking terminology. In the context of Docker, setting `APP_ADDRESS` to `0.0.0.0` means that the Spring Boot application inside the container will listen for incoming network connections from any available network interface inside the container.
+
+  The use of `0.0.0.0` as the address inside the container means the application will be accessible to any client that can reach the container's network interface, regardless of the client's IP address. This is often used when you want the application inside the container to be reachable from outside the container, and you do not want to bind the application to a specific IP address inside the container.
+
+<br/>
+
+3. Create a Docker file and save it as `Dockerfile` in the root directory of your project
 ```Dockerfile
 # Build stage
 FROM gradle:8.1-jdk AS build
@@ -108,35 +127,37 @@ ENTRYPOINT ["java","-jar","app.jar"]
 
 This Dockerfile is what we'll use to build a multi-stage Docker image for our Spring Boot application. Let's explain each part of this Dockerfile:
 
-1. `FROM gradle:8.1-jdk AS build`: This sets the base image for the build stage. It uses an official Gradle image with JDK 8. The alias "build" is given to this stage, allowing us to refer to it later in the file.
+- `FROM gradle:8.1-jdk AS build`: This sets the base image for the build stage. It uses an official Gradle image with JDK 8. The alias "build" is given to this stage, allowing us to refer to it later in the file.
 
-2. `LABEL maintainer="codaholic.com"`: This adds a label to the image, specifying the maintainer or creator of the image.
+- `LABEL maintainer="codaholic.com"`: This adds a label to the image, specifying the maintainer or creator of the image.
 
-3. `WORKDIR /`: This sets the working directory inside the container to the root.
+- `WORKDIR /`: This sets the working directory inside the container to the root.
 
-4. `COPY . /`: This copies the entire content of the current directory (where the Dockerfile is located) into the root directory of the container. This includes the source code and build files needed for the build process.
+- `COPY . /`: This copies the entire content of the current directory (where the Dockerfile is located) into the root directory of the container. This includes the source code and build files needed for the build process.
 
-5. `RUN gradle clean bootJar`: This executes the Gradle build process inside the container. It runs the `clean` and `bootJar` tasks to clean the project and create an executable Spring Boot JAR file.
+- `RUN gradle clean bootJar`: This executes the Gradle build process inside the container. It runs the `clean` and `bootJar` tasks to clean the project and create an executable Spring Boot JAR file.
 
-6. `FROM amazoncorretto:20-alpine`: This sets the base image for the final stage. It uses the Amazon Corretto image with Alpine Linux.
+- `FROM amazoncorretto:20-alpine`: This sets the base image for the final stage. It uses the Amazon Corretto image with Alpine Linux.
 
-7. `COPY --from=build /target/libs/*.jar app.jar`: This copies the generated Spring Boot JAR file (`*.jar`) from the build stage to the root directory of the final stage and renames it to `app.jar`.
+- `COPY --from=build /target/libs/*.jar app.jar`: This copies the generated Spring Boot JAR file (`*.jar`) from the build stage to the root directory of the final stage and renames it to `app.jar`.
 
-8. `EXPOSE 80`: This indicates that the container will listen on port 80 when running, though this does not actually publish the port to the host machine.
+- `EXPOSE 80`: This indicates that the container will listen on port 80 when running, though this does not actually publish the port to the host machine.
 
-9. `ENTRYPOINT ["java","-jar","app.jar"]`: This specifies the command that will be executed when the container starts. It runs the Spring Boot application using the `java -jar` command and passes `app.jar` as the JAR file to be executed.
+- `ENTRYPOINT ["java","-jar","app.jar"]`: This specifies the command that will be executed when the container starts. It runs the Spring Boot application using the `java -jar` command and passes `app.jar` as the JAR file to be executed.
 
 The Dockerfile uses multi-stage builds to separate the build process from the final image, reducing the image size and avoiding including unnecessary build tools in the final image. The first stage uses Gradle to build the Spring Boot application, and the second stage uses the resulting executable JAR file to create the final image.
 
 <br/>
 
-3. Create a file and save it as `docker-compose.yml` in the root directory of your project.
+4. Create a file and save it as `docker-compose.yml` in the root directory of your project.
 ```yaml
 version: "3.9"
 
 services:
   app:
     build: ./
+    ports:
+      - 3000:80
     restart: on-failure
     env_file: ./.env
     tty: true
@@ -150,21 +171,23 @@ The provided code snippet is a Docker Compose file written in version 3.9 syntax
 
 - `app`: The name of the service, which can be customized as needed.
 
-  - `build: ./`: Indicates that the Docker image for this service will be built using the Dockerfile located in the current directory (`./`).
+- `build: ./`: Indicates that the Docker image for this service will be built using the Dockerfile located in the current directory (`./`).
 
-  - `restart: on-failure`: Specifies that the container should automatically restart if it fails. In this case, the container will restart only if the application running inside it fails.
+- `ports`: This section maps the ports between the host and the container. The format is HOST_PORT:CONTAINER_PORT. In this case, it maps port 3000 on the host to port 80 inside the container. This means that any traffic coming to port 3000 on the Docker host will be forwarded to port 80 inside the "app" container.
 
-  - `env_file: ./.env`: Specifies the path to the `.env` file, which will provide environment variables to the container. The `.env` file can contain key-value pairs of environment variables, and these variables will be available to the application running in the container.
+- `restart: on-failure`: Specifies that the container should automatically restart if it fails. In this case, the container will restart only if the application running inside it fails.
 
-  - `tty: true`: Allocates a pseudo-TTY for the container, allowing interactive terminal communication. This is useful for running applications that may require interactive input or displaying information on the terminal.
+- `env_file: ./.env`: Specifies the path to the `.env` file, which will provide environment variables to the container. The `.env` file can contain key-value pairs of environment variables, and these variables will be available to the application running in the container.
+
+- `tty: true`: Allocates a pseudo-TTY for the container, allowing interactive terminal communication. This is useful for running applications that may require interactive input or displaying information on the terminal.
 
 <br/>
 
-4. Open up the terminal if you are a Mac user or the command prompt (cmd) if you are a PC user and type in this.
+5. Open up the terminal if you are a Mac user or the command prompt (cmd) if you are a PC user and type in this.
 ```terminal
 docker-compose up -d
 ```
-Since you're doing this for the first time, it will take awhile, depending on the size of your application. When it is done you should see something like this below.
+Since you're doing this for the first time, it will take a while, depending on the size of your application. When it is done you should see something like this below.
 ![Dockerize Spring Boot](/img/02-dockerize-spring-boot.webp)
 
 <br/>
