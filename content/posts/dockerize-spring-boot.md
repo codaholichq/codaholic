@@ -65,7 +65,7 @@ Dockerizing a Spring Boot application offers several compelling advantages, maki
 ### How NOT To Dockerize Spring Book Applications ❌
 If you do a search on YouTube, and Google, on how to "dockerize spring boot application", you will see that most of the Video tutorials and blog posts have their Dockerfile containing this kind of code
 ```Dockerfile
-FROM amazoncorretto:20-alpine
+FROM amazoncorretto:21-alpine
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 EXPOSE 80
@@ -80,12 +80,10 @@ The right approach, which you will see shortly, is a more comprehensive approach
 
 ### How To Dockerize Spring Boot Applications ✅
 
-1. Change `targetCompatibility` and `targetCompatibility` to Java v17
+1. Change `targetCompatibility` and `targetCompatibility` to Java v21
 ```diff
-- sourceCompatibility = '20'
-- targetCompatibility = '20'
-+ sourceCompatibility = '17'
-+ targetCompatibility = '17'
++ sourceCompatibility = '21'
++ targetCompatibility = '21'
 ```
 
 <br/>
@@ -110,24 +108,41 @@ In the context of Dockerizing a Spring Boot application, the provided commands s
 <br/>
 
 3. Create a Docker file and save it as `Dockerfile` in the root directory of your project
+#### Gradle
 ```Dockerfile
 # Build stage
-FROM gradle:8.1-jdk AS build
+FROM gradle:8.3-jdk AS build
 LABEL maintainer="codaholic.com"
 WORKDIR /
 COPY . /
 RUN gradle clean bootJar
 
 # Package stage
-FROM amazoncorretto:20-alpine
+FROM amazoncorretto:21-alpine
 COPY --from=build /target/libs/*.jar app.jar
+EXPOSE 80
+ENTRYPOINT ["java","-jar","app.jar"]
+```
+
+#### Maven
+```Dockerfile
+# Build stage
+FROM maven:3.9.5-eclipse-temurin-21-alpine AS build
+LABEL maintainer="codaholic.com"
+WORKDIR /
+COPY . /
+RUN mvn clean package
+
+# Package stage
+FROM amazoncorretto:21-alpine
+COPY --from=build /target/*.jar app.jar
 EXPOSE 80
 ENTRYPOINT ["java","-jar","app.jar"]
 ```
 
 This Dockerfile is what we'll use to build a multi-stage Docker image for our Spring Boot application. Let's explain each part of this Dockerfile:
 
-- `FROM gradle:8.1-jdk AS build`: This sets the base image for the build stage. It uses an official Gradle image with JDK 8. The alias "build" is given to this stage, allowing us to refer to it later in the file.
+- `FROM gradle:8.3-jdk AS build or FROM maven:3.9.5-eclipse-temurin-21-alpine AS build`: This sets the base image for the build stage. It uses an official Gradle or Maven image with JDK 21. The alias "build" is given to this stage, allowing us to refer to it later in the file.
 
 - `LABEL maintainer="codaholic.com"`: This adds a label to the image, specifying the maintainer or creator of the image.
 
@@ -135,11 +150,11 @@ This Dockerfile is what we'll use to build a multi-stage Docker image for our Sp
 
 - `COPY . /`: This copies the entire content of the current directory (where the Dockerfile is located) into the root directory of the container. This includes the source code and build files needed for the build process.
 
-- `RUN gradle clean bootJar`: This executes the Gradle build process inside the container. It runs the `clean` and `bootJar` tasks to clean the project and create an executable Spring Boot JAR file.
+- `RUN gradle clean bootJar or mvn clean package`: This executes the Gradle or Maven build process inside the container. It runs the `clean` and `bootJar or package` tasks to clean the project and create an executable Spring Boot JAR file.
 
-- `FROM amazoncorretto:20-alpine`: This sets the base image for the final stage. It uses the Amazon Corretto image with Alpine Linux.
+- `FROM amazoncorretto:21-alpine`: This sets the base image for the final stage. It uses the Amazon Corretto image with Alpine Linux.
 
-- `COPY --from=build /target/libs/*.jar app.jar`: This copies the generated Spring Boot JAR file (`*.jar`) from the build stage to the root directory of the final stage and renames it to `app.jar`.
+- `COPY --from=build /target/libs/*.jar app.jar or COPY --from=build /target/*.jar app.jar`: This copies the generated Spring Boot JAR file (`*.jar`) from the build stage to the root directory of the final stage and renames it to `app.jar`.
 
 - `EXPOSE 80`: This indicates that the container will listen on port 80 when running, though this does not actually publish the port to the host machine.
 
