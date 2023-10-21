@@ -10,9 +10,9 @@ cover:
     caption: 'Java Docker Best Practices'
 ---
 
-We all that avoid the scenario of `it was working perfectly well on my system` we need to implement a dockerize our application. What this tutorial tries to do is to give us best practices to keep in mind when we are containerizing our java applications.
+We all want to avoid the `it was working perfectly well on my system` scenario. Hence, there is a need to dockerise our Java web application. This tutorial gives us the best practices to consider when containerising our Java applications.
 
-Bellow are the best practices to keep in mind when containerizing or dockerizing java web applications:
+Below are the best practices to keep in mind when containerising or dockerising Java web applications:
 1. Specify Explicit and Predictable Docker Base Image Tags
 2. Install Only What You Need in Production in the Java Container Image
 3. Find and Fix Security Vulnerabilities in Your Java Docker Image
@@ -24,7 +24,7 @@ Bellow are the best practices to keep in mind when containerizing or dockerizing
 9. Make Sure Java is Container-Aware
 10. Be Careful with Automatic Docker Container Generation Tools
 
-Let's look at these best practices and get a proper understanding on how to apply them.
+Let's look at these best practices and properly understand how to apply them.
 
 1.  **Specify Explicit and Predictable Docker Base Image Tags**: Choose specific and versioned base images for your Java containers. Avoid using generic tags like "latest," as it may lead to unexpected changes in your environment over time. Explicitly specifying tags ensures consistency and predictability in your container environment.
 
