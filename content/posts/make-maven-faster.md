@@ -133,8 +133,28 @@ To make things even simpler, you can set JVM parameters instructing it to focus 
 ```shell
 export MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
 ```
+<br/>
 
-6. **Make Use of Maven Daemon**
+6. **Enable Test Forking**
+When it comes to software development, speed and efficiency are key. One aspect where you can significantly enhance the efficiency of your Maven builds is by allowing your tests to run in a separate Maven process. This practice, known as "test forking," can be a game-changer. Let's explore how to set it up in your Maven settings:
+
+```
+<properties>
+        <maven.test.fork>true</maven.test.fork>
+        <surefire.forkMode>once</surefire.forkMode>
+</properties>
+```
+
+Here's what's happening:
+
+`<maven.test.fork>true</maven.test.fork>`:
+Maven provides a property called maven.test.fork. When set to true, it instructs Maven to run your tests in a separate Java process. This separation is crucial because it ensures that tests are independent of each other and don't interfere with the main Maven build process or with other tests. This property adds a layer of isolation.
+
+`<surefire.forkMode>once</surefire.forkMode>`:
+Within Maven, there's a plugin called Surefire, which is responsible for executing tests. You can specify the fork mode for Surefire. Here, we set it to "once." This means that Surefire will create a single forked Java process to run all your tests. Creating only one fork helps save resources and is generally faster compared to creating a new process for each test class. This way, your tests can still be run in isolation, but you avoid the overhead of excessive process creation.
+<br/>
+
+7. **Make Use of Maven Daemon**
 
 Imagine Maven as a diligent worker, always ready to build your project. But there's a way to make it work even faster! It's called the Maven Daemon, a nifty tool that's a game-changer, especially for large projects.
 
