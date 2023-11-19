@@ -1,7 +1,7 @@
 baseURL: https://codaholic.com/
 languageCode: en-us
 title: Codaholic
-paginate: 10
+paginate: 5
 theme: ["PaperMod"]
 rssLimit: 25
 
