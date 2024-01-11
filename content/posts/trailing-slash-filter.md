@@ -71,6 +71,10 @@ I had to return the `else` statement
 
 <br/>
 
+{{< bmc-button slug="codaholic" >}}
+
+<br/>
+
 ### Frequently Asked Questions
 **How do I fix a trailing slash in a URL?**
 To fix a trailing slash with an .htaccess file, you can utilize mod_rewrite to modify the address. Keep in mind that the RewriteRule command triggers a redirection from the original address to the modified one. If you wish to skip this redirection, you can omit the R=301 flag from the RewriteRule command.

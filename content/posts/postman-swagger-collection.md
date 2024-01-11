@@ -88,6 +88,10 @@ Converting Swagger documentation into a Postman collection allows you to use Pos
 
 <br/>
 
+{{< bmc-button slug="codaholic" >}}
+
+<br/>
+
 ### Frequently Asked Questions
 
 **How do I create a Postman collection?**

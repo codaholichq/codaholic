@@ -156,3 +156,9 @@ Remove a remote branch
 ### Conclusion:
 
 These git commands will improve your productivity as a developer. You don't have to memorize them – that's the reason for this cheat sheet. Please go ahead and bookmark this page or print this page out for future reference.
+
+<br/>
+
+{{< bmc-button slug="codaholic" >}}
+
+<br/>

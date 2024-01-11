@@ -87,6 +87,10 @@ It won't overwrite the commits of others just in case the branch has changed in 
 
 <br/>
 
+{{< bmc-button slug="codaholic" >}}
+
+<br/>
+
 ### Frequently Asked Questions
 
 **Can Git history be deleted?**

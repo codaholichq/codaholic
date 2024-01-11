@@ -252,3 +252,9 @@ Dockerfile
 10.  **Be Careful with Automatic Docker Container Generation Tools**: While tools that automate container creation can be helpful, carefully review and understand their generated Dockerfiles. They may not adhere to best practices or align with your application's requirements. Modify generated files as needed to meet your standards.
 
 Implementing these best practices when building Java containers will lead to more efficient, secure, and reliable containerized Java applications.
+
+<br/>
+
+{{< bmc-button slug="codaholic" >}}
+
+<br/>
