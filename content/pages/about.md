@@ -3,12 +3,12 @@ title: "About"
 date: 2023-07-10T03:03:49+0100
 slug: about
 url: about
-summary:
+showPageMeta: false
 description:
 cover:
   image:
-  alt:
-  caption:
+  alt: About
+  caption: About
   relative: true
 ---
 
@@ -25,3 +25,11 @@ In addition to our active online community, we host regular events, workshops, a
 Whether you're looking to enhance your skills, stay informed about the latest trends, or simply engage in intellectually stimulating conversations, Codaholic is here to inspire and empower you on your tech journey. Get ready to explore, learn, collaborate, and be part of an exciting community that shares your passion for technology.
 
 Join Codaholic today and embark on an exciting adventure where technology knows no bounds! Together, let's push the boundaries of innovation and unlock the true potential of the digital world. Happy coding!
+
+### Credits
+* SSG: [Hugo](https://gohugo.io/)
+* Host: [Netlify](https://www.netlify.com/)
+* Theme: [PaperMod](https://adityatelange.github.io/hugo-PaperMod/)
+* Contact Form: [Formspree](https://formspree.io/)
+* Favicon generator: [Favicon.io](https://favicon.io/)
+* External link icon: [FontAwesome](https://fontawesome.com/) under [CC BY 4.0 License](https://fontawesome.com/license/free).
