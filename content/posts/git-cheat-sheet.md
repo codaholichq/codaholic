@@ -162,3 +162,15 @@ These git commands will improve your productivity as a developer. You don't have
 {{< bmc-button slug="codaholic" >}}
 
 <br/>
+
+### Frequently Asked Questions
+
+**How do I push a code to a remote branch in Git?**
+To publish your updates with a custom remote repository, you can utilize the `git push` command, specifying the appropriate remote name and branch you wish to push. This will transmit the changes from your local `new-feature` branch to the custom repository.
+
+**How do I undo a commit?**
+To undo the last commit that hasn't been pushed yet, you can use the 'git reset --soft HEAD~' command in your terminal. This command reverses the latest commit, preserving the changes you made while also returning the files to their staging area state.
+
+**How to add a single file in Git?**
+The `git add` command is used to prepare files for staging in a Git repository. To stage all files in the repository, you can use the simple command `git add .`. To stage a specific file, you can use `git add [filename]`. If you accidentally stage a file that you don't want to commit, you can unstage it by using 1git reset HEAD [filename]`.
+

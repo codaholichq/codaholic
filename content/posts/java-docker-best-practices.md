@@ -246,10 +246,10 @@ Dockerfile
 ```
 <br/>
 
-9.  **Make Sure Java is Container-Aware**: Ensure your Java application is aware of its containerized environment. Adjust resource limits, configurations, and logging mechanisms to match the container environment, improving compatibility and performance.
+9. **Make Sure Java is Container-Aware**: Ensure your Java application is aware of its containerized environment. Adjust resource limits, configurations, and logging mechanisms to match the container environment, improving compatibility and performance.
 <br/>
 
-10.  **Be Careful with Automatic Docker Container Generation Tools**: While tools that automate container creation can be helpful, carefully review and understand their generated Dockerfiles. They may not adhere to best practices or align with your application's requirements. Modify generated files as needed to meet your standards.
+10. **Be Careful with Automatic Docker Container Generation Tools**: While tools that automate container creation can be helpful, carefully review and understand their generated Dockerfiles. They may not adhere to best practices or align with your application's requirements. Modify generated files as needed to meet your standards.
 
 Implementing these best practices when building Java containers will lead to more efficient, secure, and reliable containerized Java applications.
 
@@ -258,3 +258,14 @@ Implementing these best practices when building Java containers will lead to mor
 {{< bmc-button slug="codaholic" >}}
 
 <br/>
+
+### Frequently Asked Questions
+
+**Is Docker useful for Java?**
+Docker enables you to establish uniform environments for development, testing, and production, ensuring your Java application packaged in a Docker container will function identically across all environments, minimizing the likelihood of unexpected problems during deployment.
+
+**Does each Docker container have its own JVM?**
+In essence, each container would operate its own separate Java process, thereby necessitating the use of its own JVM. However, you may find it beneficial to organize your applications in a way that instead of having numerous apps running on a single server or VM, you have multiple containers each hosting several apps on a single server.
+
+**What is the recommended heap size for Java?**
+It is generally advisable to limit the Java heap size to no more than half of the total available RAM on the server. Increasing the heap size beyond this threshold can lead to performance issues. For instance, if a server has 16 GB of RAM, the maximum heap size should not exceed 8 GB to avoid any adverse effects on performance.

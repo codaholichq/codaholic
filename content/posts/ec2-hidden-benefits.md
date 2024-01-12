@@ -81,3 +81,23 @@ EC2 shines in the area of scalability, customization, cost-effectiveness, reliab
 
 <br/>
 
+
+### Frequently Asked Questions
+
+**What are the key features of Amazon EC2?**
+- Highly Available Infrastructure: A robust and reliable foundation for your applications, designed to ensure uninterrupted access and maximum uptime.
+
+- Flexible and Seamless Expansion Capability: The ability to easily scale up or down as needed, without disrupting your operations or compromising on performance, thanks to Amazon Auto Scaling.
+
+-Rich Choice of Operating Systems and Software: A wide range of operating systems and software options are available, allowing you to choose the best fit for your specific needs and applications.
+
+
+**What can EC2 instances be used for?**
+General purpose instances are versatile and can be used for a variety of purposes, including:
+* Hosting web servers and software development and testing environments
+* Compute-optimized instances are ideal for running large-scale data applications that require significant processing power and memory on the AWS cloud.
+
+
+**How powerful are EC2 instances?**
+Amazon EC2 P3 instances provide high-performance computing capabilities in the cloud, equipped with up to 8 NVIDIA V100 Tensor Core GPUs and up to 100 Gbps networking throughput, making them ideal for demanding machine learning and high-performance computing (HPC) applications.
+

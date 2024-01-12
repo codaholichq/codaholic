@@ -226,4 +226,18 @@ The source code for this blog post is hosted on [codaholic](https://github.com/c
 
 <br/>
 
+### Frequently Asked Questions
+
+**How do I create a Docker image for my application?**
+To create your own Docker image for your application, follow these steps:
+1. Write a Dockerfile for your application. This file contains the instructions for building your image, including the base image, dependencies, and any necessary configurations.
+2. Use the `docker build` command to build your image from the Dockerfile. This will create a new image based on the instructions in your Dockerfile.
+3. Host your Docker image on a registry, such as Docker Hub or a private registry. This allows you to easily share your image with others and manage versions of your image.
+4. Pull the image from the registry and run it on the target machine. This can be done using the `docker pull` command to retrieve the image from the registry, and the `docker run` command to run the image on the target machine.
+
+**What is the best practice for Dockerize Spring Boot application?**
+In essence, adding a `.dockerignore` file into your Dockerization process for a Spring Boot application is a wise decision. By doing so, you can effectively minimize the size of the build context, accelerate the build process, and bolster the security of your Docker image.
+
+**How to check the Java version in a Docker container?**
+The base image tag typically indicates the version of the container's operating system. Another method is to use the `docker exec` command to run a command inside a running container, similar to remotely accessing a different subsystem on your host operating system. The `docker exec` command allows you to execute a command inside a running container as if you were interacting with it directly, even if it's running on a different machine.
 

@@ -176,4 +176,15 @@ With this command, the `mvnd` daemon kicks in quietly in the background, seamles
 
 <br/>
 
+### Frequently Asked Questions
+
+**Why does Maven download so much stuff?**
+When a dependency has its own dependencies, those dependencies will also be downloaded as part of the process. This is known as a "transitive dependency." As a result, when you use a dependency manager like Maven, it needs to download the required jars to your local hard drive, which can result in a significant amount of downloaded files.
+
+**How to clear the cache in Maven?**
+To remove the local Maven repository cache, you can simply delete the `.m2/repository` folder. This folder contains the cache of downloaded artifacts for your local projects. You can also configure the local repository path in your Maven settings.xml file, either in the global or user settings section. This will allow you to specify a custom location for the repository cache, rather than relying on the default location.
+
+**Can you use both Maven and Gradle?**
+Contrary to popular belief, there's no inherent conflict between using both Maven and Gradle for the same software project. In fact, it's perfectly fine to maintain separate build scripts for each tool, as long as they're designed to work together harmoniously. So go ahead, enjoy the flexibility and benefits of using both Maven and Gradle for your project, and don't worry about any potential conflicts
+
 

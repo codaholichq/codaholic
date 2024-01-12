@@ -74,3 +74,14 @@ In summary, Elastic Beanstalk excels in use cases that prioritize rapid developm
 {{< bmc-button slug="codaholic" >}}
 
 <br/>
+
+### Frequently Asked Questions
+
+**Why is Elastic Beanstalk bad?**
+AWS Elastic Beanstalk may not be the best choice for your project if you require worker processes. The primary purpose of worker processes is to perform tasks in the background without hampering the performance of your main web application. Unfortunately, Elastic Beanstalk does not provide a scalable solution for this requirement.
+
+**Why do we need Elastic Beanstalk?**
+AWS Elastic Beanstalk is a convenient platform for deploying and managing web applications and services. With this service, you can easily upload your code and let Elastic Beanstalk handle the deployment process from start to finish. This includes provisions for capacity, load balancing, auto-scaling, and application health monitoring, making it easy to ensure that your application is always running smoothly and efficiently.
+
+**Why is Beanstalk not serverless?**
+AWS Elastic Beanstalk provides a layer of abstraction over the underlying infrastructure, offering features like automatic scaling, load balancing, and deployment. However, beneath this layer, the user is still responsible for provisioning and managing the underlying resources, such as EC2 instances, load balancers, and auto-scaling groups.
