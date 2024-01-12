@@ -58,6 +58,6 @@ You may choose to opt out of receiving marketing communications from us by follo
 
 8. Contact Us
 
-8.1 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please send us a DM at [Codaholic](https://twitter.com/codaholichq).
+8.1 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please send us a [message](/contact).
 
 By using our website, you consent to the terms of this Privacy Policy and agree to the collection, use, and disclosure of your personal information as described herein. Thank you for trusting Codaholic with your privacy.
