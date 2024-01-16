@@ -3,6 +3,8 @@ title: "Privacy"
 date: 2023-07-10T03:03:49+0100
 slug: privacy
 url: privacy
+author: Codaholic
+hidemeta: true
 summary:
 description:
 cover:

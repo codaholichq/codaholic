@@ -3,7 +3,8 @@ title: "About"
 date: 2023-07-10T03:03:49+0100
 slug: about
 url: about
-showPageMeta: false
+author: Codaholic
+hidemeta: true
 description:
 cover:
   image:

@@ -3,7 +3,8 @@ title = 'Contact'
 url = 'contact'
 layout = 'contact'
 date = 2023-07-30T16:08:25+01:00
-showPageMeta = false
+author = 'Codaholic'
+hidemeta = true
 description = ''
 draft = false
 [cover]
@@ -12,6 +13,12 @@ alt = 'Contact'
 caption = 'Contact'
 relative = true
 +++
+
+<br/>
+
+# Contact
+
+<br/>
 
 We’re here to assist you! Whether you have a question, or a suggestion, or simply want to get in touch, feel free to use the contact form below.
 <br/>
