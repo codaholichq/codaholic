@@ -2,7 +2,7 @@
 title = 'Should Lombok Still Be Used'
 slug = 'why-use-lombok'
 author = 'Codaholic'
-date = 2023-11-05T12:41:20+01:00
+date = 2023-11-10T12:41:20+01:00
 draft = false
 description = "Let's explore the relevance of Lombok in modern Java development. Let's see whether it's a valuable tool or if alternatives should be considered."
 [cover]

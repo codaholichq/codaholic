@@ -2,7 +2,7 @@
 slug: git-cheat-sheet
 title: "Git Cheat Sheet"
 description: "Unlock the power of Git with our comprehensive Cheat Sheet. Streamline your version control workflow and collaborate effectively using Git in no time!"
-date: 2023-06-25T09:23:09+0100
+date: 2023-06-10T09:23:09+0100
 draft: false
 cover:
     image: img/git_cheat.webp

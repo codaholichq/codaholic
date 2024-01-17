@@ -2,7 +2,7 @@
 title: "How to Handle Trailing Slashes in Spring Boot"
 slug: trailing-slash-filter
 description: "Navigate the nuances of trailing slashes in Spring Boot API endpoints with practical tips for effective handling and a seamless user experience."
-date: 2023-08-20T15:09:10+01:00
+date: 2023-07-10T15:09:10+01:00
 draft: false
 cover:
   image: img/00-trailing-slash-filter.webp

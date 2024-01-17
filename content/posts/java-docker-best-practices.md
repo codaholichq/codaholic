@@ -1,7 +1,7 @@
 ---
 slug: java-docker-best-practices
 title: "Java Docker Best Practices"
-date: 2023-08-15T12:38:53+01:00
+date: 2023-08-20T12:38:53+01:00
 description: "Discover essential Java Docker best practices. Optimize containerized Java applications for performance, scalability, and seamless deployment. 🚀 #JavaDocker"
 draft: false
 cover:

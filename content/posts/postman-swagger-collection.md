@@ -1,7 +1,7 @@
 +++
 title = 'Create Postman Collection from Swagger'
 slug = 'postman-swagger-collection'
-date = 2023-09-05T11:13:20+01:00
+date = 2023-09-20T11:13:20+01:00
 draft = false
 description = 'Easily transform Swagger API specifications into a Postman Collection for efficient testing and collaboration with our step-by-step guide.'
 [cover]

@@ -1,12 +1,12 @@
 ---
 slug: nuget-package-risk
-title: "How This NuGet Package Almost Cost Me My Job"
+title: "This NuGet Package Almost Got Me Fired"
 description: "Discover the shocking truth about how a seemingly innocent NuGet package nearly derailed my career. Learn from my experience and avoid the pitfalls. Read now!"
-date: 2023-07-15T20:24:57+01:00
+date: 2023-09-10T20:24:57+01:00
 draft: false
 cover:
     image: img/almost-got-sacked.webp
-    alt: 'How This Nuget Package Almost Cost Me My Job'
+    alt: 'This NuGet Package Almost Got Me Fired'
     caption: 'Almost Got Sacked | Photo by Andrea Piacquadio'
 categories: [".NET Core"]
 ---
@@ -114,6 +114,17 @@ By sharing my cautionary tale, I hope to raise awareness among developers about 
 
 <br/>
 
+### Frequently Asked Questions
 
+**How are NuGet packages resolved?**
+When installing packages using the PackageReference format in a project, NuGet creates a flat package graph in a designated file and resolves conflicts beforehand. This process, known as transitive restore, allows for efficient and seamless package management within projects.
 
+**How do I clear the NuGet package folder?**
+1. Open Visual Studio and navigate to the "Tools" menu.
+2. Click on "NuGet Package Manager" and select "Package Manager Settings" from the dropdown menu.
+3. In the Package Manager Settings window, locate the "Clear All NuGet Cache(s)" button.
+4. Click on the "Clear All NuGet Cache(s)" button to initiate the clearing process.
+Once you've completed these steps, the NuGet cache will be cleared and any stored packages will be removed. This can help resolve issues with package installation and management in your projects.
 
+**What does a NuGet package do?**
+NuGet (pronounced "New Get") is a powerful tool for managing software packages, particularly those written in .NET Framework. Initially developed by the Outercurve Foundation under the name NuPack, NuGet has become a widely adopted standard for packaging and distributing software applications.

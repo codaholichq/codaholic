@@ -1,7 +1,7 @@
 ---
 slug: dockerize-spring-boot
 title: "How To Dockerize Spring Boot"
-date: 2023-08-05T11:55:12+0100
+date: 2023-07-20T11:55:12+0100
 description: "Learn how to Dockerize Spring Boot applications for easy deployment and scalability. A step-by-step guide to containerize your projects. 🐳 #DockerizeSpringBoot"
 draft: false
 cover:
