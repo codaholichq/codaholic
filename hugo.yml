@@ -10,6 +10,7 @@ permalinks:
 
 googleAnalytics: G-CJ1XGSZQKH
 enableRobotsTXT: true
+enableEmoji: true
 sitemap:
   changefreq: daily
   priority: 0.5
@@ -28,7 +29,7 @@ params:
   showReadingTime: true
   showShareButtons: true
   showPostNavLinks: true
-  ShowFullTextinRSS: true
+  showFullTextinRSS: true
   showCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
