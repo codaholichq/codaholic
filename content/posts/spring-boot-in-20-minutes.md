@@ -33,13 +33,13 @@ These will aid your understanding of the Spring Boot framework.
 <br/>
 
 ### What is Spring Boot?
-Spring Boot is an open-source Java framework built to ease the development of Java-based web applications. It is a subset of the Spring framework and takes the convention-over-configuration approach, which allows developers to create production-ready web applications with relative ease rapidly.
+Spring Boot is an open-source Java framework built to ease the development of Java-based web applications. It is a subset of the Spring framework and takes the convention-over-configuration approach, which allows developers to create production-ready web applications rapidly and with relative ease.
 
 The main goal of Spring Boot is to remove boilerplate code and lengthy configurations that developers often encounter when building web applications with the Spring framework. It comes with opinionated rules and auto-configured settings, which reduces the time and effort needed to set up a Spring web application.
 
 ### Features of Spring Boot
 
-Spring Boot comes fitted with a lot of features that make it a popular choice for Java-based web development. below are some of its key features:
+Spring Boot comes fitted with a lot of features that make it a popular choice for Java-based web development. Below are some of its key features:
 
 ![Spring Boot vs. Other Java Web Frameworks](/img/02-spring-boot-guide.webp)
 
@@ -68,7 +68,7 @@ Spring Boot comes fitted with a lot of features that make it a popular choice fo
    Spring Boot supports profile-based properties, enabling developers to define configuration properties for specific environments (e.g., development, testing, production) and switch between them easily.
 
 9.  **External Configuration**
-    Spring Boot allows developers to configure applications using external properties files (e.g., `application.yml`,`application.yaml` `application.properties`), making it convenient to modify configurations without changing the code.
+    Spring Boot allows developers to configure applications using external properties files (e.g., `application.yml`,`application.yaml`, `application.properties`), making it convenient to modify configurations without changing the code.
 
 10. **DevTools**
     Spring Boot DevTools provides a set of development-time features like automatic application restarts and remote debugging, enhancing the development experience.
@@ -107,12 +107,12 @@ Now let’s dive into the main layers of Spring Boot to understand the framework
 2. Infrastructure Layer
 3. Presentation Layer
    
-The business layer is the most important, as it is where your application's logic resides. Now let's look at each layer and see what function they provide.
+The business layer is the most important, as it is where your application's logic resides. Now, let's look at each layer and see what function they provide.
 
 ### Business Layer
 In Spring Boot development, the business layer refers to the part of the application responsible for handling business logic and processing data. It is an intermediary between the presentation layer (usually the controllers or endpoints) and the data access layer (usually the repositories or data access objects).
 
-The primary purpose of the business layer is to encapsulate the application's core business rules and operations. It ensures that the application's business logic is separate from the presentation and data access concerns, promoting a clean and maintainable codebase.
+The primary purpose of the business layer is to encapsulate the application's core business rules and operations. It ensures the application's business logic is separate from the presentation and data access concerns, promoting a clean and maintainable codebase.
 
 Here are the key Responsibilities of the Business Layer:
 
@@ -671,9 +671,9 @@ To update any product, send a `PUT` request with the specific ID to `http://loca
 To delete a product, send a `DELETE` request with the specific ID to `http://localhost:3000/api/todo/590be75d-13ec-4d3a-9e6d-75ab2fa461b5` as shown in the image below
 ![Create a Todo](/img/08-spring-boot-guide.webp)
 <br/>
-Congratulations, we have created and ensured that our Spring Boot Web API works as intended.
+Congratulations! We have created and ensured that our Spring Boot Web API works as intended.
 
-The source code for this guide can be found on [Codaholic](https://github.com/codaholichq/todo)
+The source code for this guide can be found on [Codaholic](https://github.com/codaholichq/todo/tree/71811a626ad1f61911fc6252e1310eafc661ad24)
 
 <br/>
 
@@ -687,7 +687,7 @@ The source code for this guide can be found on [Codaholic](https://github.com/co
 Spring Boot is designed to be accessible and user-friendly, making it an ideal choice for developers with prior experience in Java programming and web development. Its streamlined architecture and intuitive interface enable users to quickly familiarize themselves with the framework and begin building applications efficiently.
 
 **Is Spring Boot faster than Spring?**
-Spring Boot streamlines the application development process by integrating all the features of the standard Spring framework, making it much quicker to launch an application. In comparison to Spring, Spring Boot significantly reduces the time it takes to get an application up and running because it automatically configures all its attributes. Therefore, the answer is Spring Boot.
+Spring Boot streamlines the application development process by integrating all the features of the standard Spring framework, making it much quicker to launch an application. Compared to Spring, Spring Boot significantly reduces the time it takes to get an application up and running because it automatically configures all its attributes. Therefore, the answer is Spring Boot.
 
 **How do I reduce build time in Spring Boot?**
 To optimize the performance of a Spring Boot application, consider implementing the following best practices:
@@ -698,5 +698,5 @@ To optimize the performance of a Spring Boot application, consider implementing 
 5. Minimize auto-configuration
 6. Use the latest version of the JVM
 7. Make use of profile-specific configuration
-8. Use classpath scanning to dynamically discover and configure beans at runtime
+8. Use classpath scanning to discover and configure beans at runtime dynamically
    
